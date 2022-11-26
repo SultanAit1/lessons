@@ -39,5 +39,5 @@ class Hero:
     @phrase.setter
     def phrase(self,new_phrase):
         self.new_phrase = new_phrase
-    
+
 
