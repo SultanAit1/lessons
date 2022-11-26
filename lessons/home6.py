@@ -1,15 +1,15 @@
 
 class Hero:
 
-    def __init__(self, power=0, fly=0, skill=0, magic=0):
+    def __init__(self, power=True, fly=True, skill=True, csco=True):
 
         self.__power = power
         self.__fly = fly
         self.__skill = skill
-        self.__magic = magic
-    def setpwr(self, power):
+        self.__csco = csco
+    def setpower(self, power):
         self.__power = power
-    def getpwr(self):
+    def getpower(self):
         return self.__power
     def setfly(self, fly):
         self.__fly = fly
@@ -19,16 +19,16 @@ class Hero:
         self.__skill = skill
     def getskill(self):
         return self.__skill
-    def setmgc(self, magic):
-        self.__magic = magic
-    def getmgc(self):
-        return self.__magic
+    def setcsco(self, csco):
+        self.__csco = csco
+    def getcsco(self):
+        return self.__csco
 hr = Hero()
-hr.setpwr(33)
+hr.setpower(101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010)
 hr.setfly(1)
-hr.setskill(100)
-hr.setmgc(24)
-print(f'pw-{hr.getpwr()} \n'
+hr.setskill('cut')
+hr.setcsco('Ak-47')
+print(f'pw-{hr.getpower()} \n'
 f'fly-{hr.getfly()} \n'
 f'skill-{hr.getskill()} \n'
-f'Магия-{hr.getmgc()}')
+f'Магия-{hr.getcsco()}')
